@@ -1,0 +1,245 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .card-description {
+    font-size: 0.875rem; /* Adjust size as needed */
+    font-style: italic;
+    color: #4A4A4A;
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+  
+.registration-form {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.registration-form h2 {
+  color: #4a4a4a;
+  margin-bottom: 20px;
+}
+
+.registration-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.registration-form form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.registration-form label {
+  margin-bottom: 5px;
+  color: #4a4a4a;
+}
+
+.registration-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.registration-form button {
+  grid-column: span 2;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  background: linear-gradient(135deg, #185a9d, #185a9d);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.registration-form button:hover {
+  background-color: #6a53ff;
+}
+
+/* Register section ended  */
+.signin-form {
+    
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 0 auto;
+}
+.signin-form a{
+  text-decoration: none;
+  /* padding: 1rem; */
+  font-weight: bold;
+  
+}
+.signin-form p{
+  padding:0.5rem;
+}
+
+.signin-form h2 {
+  color: #4a4a4a;
+  margin-bottom: 20px;
+}
+
+.signin-form form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.signin-form form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.signin-form label {
+  margin-bottom: 5px;
+  color: #4a4a4a;
+}
+
+.signin-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.signin-form button {
+  padding: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  background: linear-gradient(135deg, #185a9d, #185a9d);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.signin-form button:hover {
+  background-color: #6a53ff;
+}
+
+/* Signin section ended  */
+
+.heading {
+  text-align: center;
+  background: linear-gradient(135deg, #43cea2, #185a9d);
+  color: white;
+  padding: 5px 0;
+  margin-bottom: 3px; 
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+
+main {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 4rem;
+  
+}
+
+.contact-info div {
+  text-align: center;
+}
+.contact-info h4{
+  color: RGB(24, 90, 157)
+}
+
+.contact-info p {
+  margin: 5px 0;
+  /* color: #ffffff; */
+  color:#666;
+  /* font-weight: bold; */
+}
+
+@media screen and (max-width:550px){
+  .contact-info{
+      flex-direction:row;
+      flex-wrap:wrap;
+  }
+}
+
+.contact-form {
+  background-color: #fff;
+  padding: 1.2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form h2 {
+  color: #4a4a4a;
+  margin-bottom: 20px;
+}
+
+.contact-form form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.contact-form form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 5px;
+  color: #4a4a4a;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.contact-form button {
+  grid-column: span 2;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  /* background-color: #403af3; */
+  background: linear-gradient(135deg, #185a9d, #185a9d);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  
+}
+
+.page_heading{
+  text-align: center;
+  background: linear-gradient(135deg, #185a9d, #185a9d);
+  color: white;
+  padding: 0.5 0;
+  margin-bottom: 3px; 
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+/* contact section ended  */
