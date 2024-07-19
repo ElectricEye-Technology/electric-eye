@@ -3,8 +3,6 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
-// import About from './pages/About';
-// import Services from './pages/Services';
 import Services from "./components/Services";
 import About from "./components/About";
 import Events from "./components/Events";
@@ -107,15 +105,15 @@ function App() {
       <div className="App">
         <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/events" element={<Events />} />
-          <Route path="/careers" element={<Careers />} />
-          <Route path="/contact" element={<Con />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/signup" element={<SignUp />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/electric-eye" element={<Home />} />
+          <Route path="electric-eye/about" element={<About />} />
+          <Route path="electric-eye/services" element={<Services />} />
+          <Route path="electric-eye/events" element={<Events />} />
+          <Route path="electric-eye/careers" element={<Careers />} />
+          <Route path="electric-eye/contact" element={<Con />} />
+          <Route path="electric-eye/blog" element={<Blog />} />
+          <Route path="electric-eye/signup" element={<SignUp />} />
+          <Route path="electric-eye/login" element={<Login />} />
         </Routes>
         <Footer />
       </div>
