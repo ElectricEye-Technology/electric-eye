@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
@@ -11,9 +11,7 @@ import Blog from "./components/Blog";
 import ContactForm from "./components/ContactForm";
 import Login from "./components/Login";
 import SignUp from "./components/SignUp";
-import Contact from './pages/Contact';
-import SignUp from './pages/SignUp';
-import LogIn from './pages/LogIn';
+import Products from "./components/Products";
 
 const Con = () => {
   return (
@@ -63,39 +61,83 @@ const Con = () => {
             </p>
           </div>
         </div>
-        <section class="contact-form">
-            <form id="contact-form" action="https://formspree.io/f/mqazkwlz"
-             method="post">
-                <div>
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Enter Your Name" required/>
-                </div>
-                <div>
-                    <label for="father-name">Father Name</label>
-                    <input type="text" id="father-name" name="fatherName" placeholder="Enter Your Father Name" required/>
-                </div>
-                <div>
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" name="email" placeholder="Enter Your Email" required/>
-                </div>
-                <div>
-                    <label for="cnic">CNIC</label>
-                    <input type="text" id="cnic" name="cnic" placeholder="XXXXX-XXXXXXX-X" required/>
-                </div>
-                <div>
-                    <label for="phone">Phone Number</label>
-                    <input type="text" id="phone" name="phone" placeholder="Enter Your Phone No" required/>
-                </div>
-                <div>
-                    <label for="address">Address</label>
-                    <input type="text" id="address" name="address" placeholder="Enter Your Address" required/>
-                </div>
-                <div>
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Enter Your Message" required></textarea>
-                </div>
-                <button type="submit">SUBMIT</button>
-            </form>
+        <section className="contact-form">
+          <form
+            id="contact-form"
+            action="https://formspree.io/f/mqazkwlz"
+            method="post"
+          >
+            <div>
+              <label htmlFor="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter Your Name"
+                required
+              />
+            </div>
+            <div>
+              <label htmlFor="father-name">Father Name</label>
+              <input
+                type="text"
+                id="father-name"
+                name="fatherName"
+                placeholder="Enter Your Father Name"
+                required
+              />
+            </div>
+            <div>
+              <label htmlFor="email">E-mail</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter Your Email"
+                required
+              />
+            </div>
+            <div>
+              <label htmlFor="cnic">CNIC</label>
+              <input
+                type="text"
+                id="cnic"
+                name="cnic"
+                placeholder="XXXXX-XXXXXXX-X"
+                required
+              />
+            </div>
+            <div>
+              <label htmlFor="phone">Phone Number</label>
+              <input
+                type="text"
+                id="phone"
+                name="phone"
+                placeholder="Enter Your Phone No"
+                required
+              />
+            </div>
+            <div>
+              <label htmlFor="address">Address</label>
+              <input
+                type="text"
+                id="address"
+                name="address"
+                placeholder="Enter Your Address"
+                required
+              />
+            </div>
+            <div>
+              <label htmlFor="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Enter Your Message"
+                required
+              ></textarea>
+            </div>
+            <button type="submit">SUBMIT</button>
+          </form>
         </section>
       </div>
     </section>
@@ -107,17 +149,18 @@ function App() {
     <Router>
       <div className="App">
         <Header />
+
         <Routes>
-          <Route path="/electric-eye" element={<Home />} />
-          <Route path="electric-eye/about" element={<About />} />
-          <Route path="electric-eye/services" element={<Services />} />
-          <Route path="electric-eye/events" element={<Events />} />
-          <Route path="electric-eye/careers" element={<Careers />} />
-          
-          <Route path="electric-eye/contact" element={<Con />} />
-          <Route path="electric-eye/blog" element={<Blog />} />
-          <Route path="electric-eye/signup" element={<SignUp />} />
-          <Route path="electric-eye/login" element={<Login />} />
+          <Route path="/electric-eye/" element={<Home />} />
+          <Route path="/electric-eye/about" element={<About />} />
+          <Route path="/electric-eye/services" element={<Services />} />
+          <Route path="/electric-eye/events" element={<Events />} />
+          <Route path="/electric-eye/careers" element={<Careers />} />
+          <Route path="/electric-eye/contact" element={<Con />} />
+          <Route path="/electric-eye/products" element={<Products />} />
+          <Route path="/electric-eye/blog" element={<Blog />} />
+          <Route path="/electric-eye/signup" element={<SignUp />} />
+          <Route path="/electric-eye/login" element={<Login />} />
         </Routes>
         <Footer />
       </div>
