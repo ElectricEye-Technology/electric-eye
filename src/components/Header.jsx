@@ -20,17 +20,18 @@ const Header = () => {
           </Link>
         </div>
         <nav className="hidden lg:flex space-x-6 text-lg">
-          <Link to="/" className="hover:text-black">Home</Link>
-          <Link to="/about" className="hover:text-black">About Us</Link>
-          <Link to="/services" className="hover:text-black">Services</Link>
-          <Link to="/events" className="hover:text-black">Events</Link>
-          <Link to="/careers" className="hover:text-black">Careers</Link>
-          <Link to="/blog" className="hover:text-black">Blog</Link>
+          <Link to="/electric-eye/" className="hover:text-black">Home</Link>
+          <Link to="/electric-eye/about" className="hover:text-black">About Us</Link>
+          <Link to="/electric-eye/products" className="hover:text-black">Products</Link>
+          <Link to="/electric-eye/services" className="hover:text-black">Services</Link>
+          <Link to="/electric-eye/events" className="hover:text-black">Events</Link>
+          <Link to="/electric-eye/careers" className="hover:text-black">Careers</Link>
+          <Link to="/electric-eye/blog" className="hover:text-black">Blog</Link>
         </nav>
         <div className="hidden lg:flex space-x-4">
-          <Link to="/contact" className="bg-blue-700 px-4 py-2 rounded hover:bg-blue-800 text-lg">Contact</Link>
-          <Link to="/signup" className="bg-blue-700 px-4 py-2 rounded hover:bg-blue-800 text-lg">Sign Up</Link>
-          <Link to="/login" className="bg-blue-700 px-4 py-2 rounded hover:bg-blue-800 text-lg">Log In</Link>
+          <Link to="/electric-eye/contact" className="bg-blue-700 px-4 py-2 rounded hover:bg-blue-800 text-lg">Contact</Link>
+          <Link to="/electric-eye/signup" className="bg-blue-700 px-4 py-2 rounded hover:bg-blue-800 text-lg">Sign Up</Link>
+          <Link to="/electric-eye/login" className="bg-blue-700 px-4 py-2 rounded hover:bg-blue-800 text-lg">Log In</Link>
         </div>
         <div className="lg:hidden">
           <button onClick={toggleMenu} className="focus:outline-none">
@@ -41,28 +42,28 @@ const Header = () => {
       {isOpen && (
         <div className="lg:hidden bg-blue-800 text-white">
           <nav className="flex flex-col items-center space-y-4 py-4 text-lg">
-            <Link to="/" className="flex items-center hover:text-black">
+            <Link to="/electric-eye/" className="flex items-center hover:text-black">
               <FaHome className="mr-2" /> Home
             </Link>
-            <Link to="/about" className="flex items-center hover:text-black">
+            <Link to="/electric-eye/about" className="flex items-center hover:text-black">
               <FaInfoCircle className="mr-2" /> About Us
             </Link>
-            <Link to="/services" className="flex items-center hover:text-black">
+            <Link to="/electric-eye/services" className="flex items-center hover:text-black">
               <FaConciergeBell className="mr-2" /> Services
             </Link>
-            <Link to="/events" className="flex items-center hover:text-black">
+            <Link to="/electric-eye/events" className="flex items-center hover:text-black">
               <FaCalendarAlt className="mr-2" /> Events
             </Link>
-            <Link to="/careers" className="flex items-center hover:text-black">
+            <Link to="/electric-eye/careers" className="flex items-center hover:text-black">
               <FaBriefcase className="mr-2" /> Careers
             </Link>
-            <Link to="/contact" className="bg-blue-700 px-4 py-2 rounded hover:bg-blue-800 flex items-center">
+            <Link to="/electric-eye/contact" className="bg-blue-700 px-4 py-2 rounded hover:bg-blue-800 flex items-center">
               <FaEnvelope className="mr-2" /> Contact
             </Link>
-            <Link to="/signup" className="bg-blue-700 px-4 py-2 rounded hover:bg-blue-800 flex items-center">
+            <Link to="/electric-eye/signup" className="bg-blue-700 px-4 py-2 rounded hover:bg-blue-800 flex items-center">
               <FaUserPlus className="mr-2" /> Sign Up
             </Link>
-            <Link to="/login" className="bg-blue-700 px-4 py-2 rounded hover:bg-blue-800 flex items-center">
+            <Link to="/electric-eye/login" className="bg-blue-700 px-4 py-2 rounded hover:bg-blue-800 flex items-center">
               <FaSignInAlt className="mr-2" /> Log In
             </Link>
           </nav>
