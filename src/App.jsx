@@ -8,7 +8,6 @@ import About from "./components/About";
 import Events from "./components/Events";
 import Careers from "./components/Careers";
 import Blog from "./components/Blog";
-import ContactForm from "./components/ContactForm";
 import Login from "./components/Login";
 import SignUp from "./components/SignUp";
 import Products from "./components/Products";
