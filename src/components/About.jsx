@@ -28,8 +28,7 @@ const About = () => {
     <>
     <section className="bg-gray-100 dark:text-gray-800 my-8">
       <div className="container flex flex-col-reverse mx-auto lg:flex-row">
-        <div className="flex flex-col px-6 py-8 space-y-6 rounded-sm sm:p-8 lg:p-12 lg:w-1/2 xl:w-2/5 dark:bg-violet-600 dark:text-gray-50 ">
-          {/* Feature Blocks */}
+        <div className="flex flex-col px-6 py-8 space-y-6 rounded-sm sm:p-8 lg:p-12 lg:w-1/2 xl:w-2/5 dark:bg-violet-600 dark:text-gray-50 justify-center">
           {features.map((feature, index) => (
             <motion.div
               key={index}
@@ -65,7 +64,7 @@ const About = () => {
           {/* Container for Image and Content */}
           <motion.div
             whileHover={{ scale: 1.05 }}
-            className="card w-full h-full rounded-lg shadow-lg overflow-hidden relative"
+            className="card w-full h-full  shadow-lg overflow-hidden relative"
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
@@ -96,7 +95,7 @@ const About = () => {
         </div>
       </div>
     </section>
-    <AboutUs/>
+    
     </>
   );
 };
