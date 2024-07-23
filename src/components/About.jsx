@@ -1,7 +1,6 @@
 import eye from "../assets/eye.jpeg";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import AboutUs from "./AboutUs";
 
 const features = [
   {
@@ -28,7 +27,7 @@ const About = () => {
     <>
     <section className="bg-gray-100 dark:text-gray-800 my-8">
       <div className="container flex flex-col-reverse mx-auto lg:flex-row">
-        <div className="flex flex-col px-6 py-8 space-y-6 rounded-sm sm:p-8 lg:p-12 lg:w-1/2 xl:w-2/5 dark:bg-violet-600 dark:text-gray-50 justify-center">
+        <div className="flex flex-col px-6 py-8 space-y-6 rounded-sm sm:p-8 lg:p-12 lg:w-1/2 xl:w-2/5 dark:bg-blue-600 dark:text-gray-50 justify-center">
           {features.map((feature, index) => (
             <motion.div
               key={index}
@@ -76,7 +75,7 @@ const About = () => {
             />
             {/* Card Content */}
             <motion.div
-              className={`card__content absolute bottom-0 left-0 w-full bg-opacity-80 bg-gray-200 dark:bg-opacity-80 dark:bg-gray-800 p-4 md:p-8 lg:p-12 transform-gpu ${
+              className={`card__content absolute bottom-0 left-0 w-full bg-opacity-80 bg-gray-200 dark:bg-opacity-80 dark:bg-blue-800 p-4 md:p-8 lg:p-12 transform-gpu ${
                 isHovered ? "rotateX-0" : "rotateX-90"
               }`}
               transition={{ duration: 0.6, ease: [0.175, 0.885, 0.32, 1.275] }}
