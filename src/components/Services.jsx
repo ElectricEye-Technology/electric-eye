@@ -85,7 +85,7 @@ const Services = () => {
               alt=""
               className="h-80 dark:bg-gray-500 aspect-video"
             />
-            <div className="flex flex-col justify-center flex-1 p-6 dark:bg-gray-50">
+            <div className="services flex flex-col justify-center flex-1 p-6 dark:bg-gray-50">
               <span className="text-xs uppercase dark:text-gray-600">
                 {feature.tagline}
               </span>
