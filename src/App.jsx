@@ -1,5 +1,6 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+
+import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
@@ -8,9 +9,16 @@ import About from "./components/About";
 import Events from "./components/Events";
 import Careers from "./components/Careers";
 import Blog from "./components/Blog";
+import ContactForm from "./components/ContactForm";
 import Login from "./components/Login";
 import SignUp from "./components/SignUp";
 import Products from "./components/Products";
+import Dots from "./components/Dots";
+import SVG from "./pages/SVG";
+import Form from "./pages/Form";
+import Hero from "./components/Hero";
+import Button from "./components/Button";
+
 
 const Con = () => {
   return (
@@ -33,7 +41,8 @@ const Con = () => {
                   clipRule="evenodd"
                 ></path>
               </svg>
-              <span>Fake address, 9999 City</span>
+
+              <span>ElectricEye Pvt Ltd NASTP</span>
             </p>
             <p className="flex items-center">
               <svg
@@ -44,7 +53,7 @@ const Con = () => {
               >
                 <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
               </svg>
-              <span>123456789</span>
+              <span>0348-0231009</span>
             </p>
             <p className="flex items-center">
               <svg
@@ -56,101 +65,28 @@ const Con = () => {
                 <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
                 <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
               </svg>
-              <span>contact@business.com</span>
+              <span>info@electriceyetechnology.com</span>
             </p>
           </div>
         </div>
-        <section className="contact-form">
-          <form
-            id="contact-form"
-            action="https://formspree.io/f/mqazkwlz"
-            method="post"
-          >
-            <div>
-              <label htmlFor="name">Name</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Enter Your Name"
-                required
-              />
-            </div>
-            <div>
-              <label htmlFor="father-name">Father Name</label>
-              <input
-                type="text"
-                id="father-name"
-                name="fatherName"
-                placeholder="Enter Your Father Name"
-                required
-              />
-            </div>
-            <div>
-              <label htmlFor="email">E-mail</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Enter Your Email"
-                required
-              />
-            </div>
-            <div>
-              <label htmlFor="cnic">CNIC</label>
-              <input
-                type="text"
-                id="cnic"
-                name="cnic"
-                placeholder="XXXXX-XXXXXXX-X"
-                required
-              />
-            </div>
-            <div>
-              <label htmlFor="phone">Phone Number</label>
-              <input
-                type="text"
-                id="phone"
-                name="phone"
-                placeholder="Enter Your Phone No"
-                required
-              />
-            </div>
-            <div>
-              <label htmlFor="address">Address</label>
-              <input
-                type="text"
-                id="address"
-                name="address"
-                placeholder="Enter Your Address"
-                required
-              />
-            </div>
-            <div>
-              <label htmlFor="message">Message</label>
-              <textarea
-                id="message"
-                name="message"
-                placeholder="Enter Your Message"
-                required
-              ></textarea>
-            </div>
-            <button type="submit">SUBMIT</button>
-          </form>
-        </section>
+        <Form />
       </div>
     </section>
   );
 };
 
+
+
+
+
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div className="App custom-cursor ">
         <Header />
-
+        {/* <SVG/> */}
         <Routes>
-          <Route path="/electric-eye/" element={<Home />} />
+          <Route path="/electric-eye/" element={<Hero />} />
           <Route path="/electric-eye/about" element={<About />} />
           <Route path="/electric-eye/services" element={<Services />} />
           <Route path="/electric-eye/events" element={<Events />} />
