@@ -172,35 +172,7 @@ const Products = () => {
 
   return (
     <>
-      <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 dark:bg-gray-100 dark:text-gray-800">
-        <h2 className="mb-8 text-4xl font-bold leading-none text-center">
-          What do we have to offer?
-        </h2>
-        {features.map((feature, index) => (
-          <motion.ul
-            key={index}
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: feature.delay }}
-            className="grid gap-3 grid-cols-3"
-          >
-            <li className="flex items-center space-x-2 col-span-1">
-              <SVGCont />
-              <div>
-                <span> {feature.title}</span>
-                <motion.p
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ duration: 0.6, delay: feature.delay }}
-                  className="leading-snug"
-                >
-                  {feature.description}
-                </motion.p>
-              </div>
-            </li>
-          </motion.ul>
-        ))}
-      </div>
+      
       <section className="bg-gray-100 dark:text-gray-800 my-8">
         <div className="container flex flex-col-reverse mx-auto lg:flex-row">
           <div className="flex flex-col px-6 py-8 space-y-6 rounded-sm sm:p-8 lg:p-12 lg:w-1/2 xl:w-2/5 dark:bg-blue-600 dark:text-gray-50 justify-center">
