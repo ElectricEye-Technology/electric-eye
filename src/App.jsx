@@ -3,21 +3,16 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Home from "./components/Home";
 import Services from "./components/Services";
 import About from "./components/About";
 import Events from "./components/Events";
 import Careers from "./components/Careers";
 import Blog from "./components/Blog";
-import ContactForm from "./components/ContactForm";
 import Login from "./components/Login";
 import SignUp from "./components/SignUp";
 import Products from "./components/Products";
-import Dots from "./components/Dots";
-import SVG from "./pages/SVG";
 import Form from "./pages/Form";
 import Hero from "./components/Hero";
-import Button from "./components/Button";
 
 
 const Con = () => {
